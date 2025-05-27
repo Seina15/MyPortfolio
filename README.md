@@ -2,6 +2,12 @@
 
 これは私のポートフォリオサイトです。  
 React + Vite を使用し、モダンな構成で開発しています。
+今後、順次Typescriptに以降予定です。
+※開発中
+
+This is my personal portfolio site, built with React and Vite using a modern frontend stack.
+Migration to TypeScript is planned.
+※Currently under development.
 
 
 
