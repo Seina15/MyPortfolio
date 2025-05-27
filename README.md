@@ -1,12 +1,19 @@
-# React + Vite
+# 🚀 My Portfolio Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+これは私のポートフォリオサイトです。  
+React + Vite を使用し、モダンな構成で開発しています。
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+<!-- ![screenshot](./screenshot.png) -->
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 使用技術・環境
+
+- **JavaScript** – Main language
+- **React (JSX)** – UI development
+- **CSS / MUI** – Styling
+
+- ⚛️ [React](https://reactjs.org/)
+- ⚡ [Vite](https://vitejs.dev/)
+- 💅 [MUI (Material UI)](https://mui.com/) - コンポーネントスタイリング
+
