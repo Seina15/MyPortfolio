@@ -1,0 +1,44 @@
+.title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+#about-this-site {
+  padding-top: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.scroll-section {
+  padding: 60px 0;
+  text-align: center;
+  width: 100%;
+}
+
+#about-site{
+  background-color: #243a75;
+}
+
+#about-me{
+  background-color: #ffffff;
+}
+
+/* プロフィール */
+.profile {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* 写真 */
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.offset {
+  scroll-margin-top: 40px; /* AppBarの高さやずらしたい分だけ調整 */
+}
