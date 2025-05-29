@@ -22,6 +22,10 @@
   background-color: #ffffff;
 }
 
+#work{
+  background-color: #fafafa80;
+}
+
 /* プロフィール */
 .profile {
   display: flex;
@@ -40,5 +44,5 @@
   object-fit: cover;
 }
 .offset {
-  scroll-margin-top: 40px; /* AppBarの高さやずらしたい分だけ調整 */
+  scroll-margin-top: 40px;
 }

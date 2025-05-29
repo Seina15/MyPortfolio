@@ -1,5 +1,6 @@
 import React from 'react';
 import './section.css';
+import TitlebarImageList from './TitlebarImageList';
 
 export default function ScrollSection() {
   return (
@@ -36,20 +37,13 @@ export default function ScrollSection() {
 
       </section>
       
-      <section className="scroll-section" id="about-site">
-        <h1 className="title">~ About This Page ~</h1>
-        <p id="about-this-site">
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-
-        </p>
+      <section className="scroll-section" id="work">
+        
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <TitlebarImageList />
+        </div>
       </section>
+
       
     </>
   );
