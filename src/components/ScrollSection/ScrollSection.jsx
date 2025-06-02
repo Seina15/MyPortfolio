@@ -1,6 +1,7 @@
 import React from 'react';
 import './section.css';
-import TitlebarImageList from './TitlebarImageList';
+import TitlebarImageList from '../TitlebarImageList';
+import CustomizedTimeline from "../CustomizedTimeline"
 
 export default function ScrollSection() {
   return (
@@ -37,13 +38,14 @@ export default function ScrollSection() {
 
       </section>
       
+      {/* これまでにやってきたこと */}
       <section className="scroll-section" id="work">
         
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <TitlebarImageList />
         </div>
       </section>
-
+      {/* <CustomizedTimeline/> */}
       
     </>
   );
