@@ -18,6 +18,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import PersonIcon from '@mui/icons-material/person';
 import WorkIcon from '@mui/icons-material/Work';
 import { Avatar } from '@mui/material';
+import { Outlet } from 'react-router-dom';
 
 const drawerWidth = 240;
 
@@ -125,8 +126,20 @@ function DrawerAppBar(props) {
           {drawer}
         </Drawer>
       </nav>
-      <Box component="main" sx={{ p: 0 }}>
+      <Box
+        component="main"
+        sx={{
+          flexGrow: 1,
+          width: '100vw',
+          maxWidth: '100vw',
+          overflowX: 'hidden',
+          p: 0,
+          m: 0
+        }}
+      >
+
         <Toolbar />
+        <Outlet />
       </Box>
     </Box>
   );
