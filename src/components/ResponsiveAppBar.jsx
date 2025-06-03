@@ -26,6 +26,7 @@ const navItems = [
   { label: 'Home', icon: <HomeIcon /> },
   { label: 'About Me', icon: <PersonIcon /> },
   { label: 'Work', icon: <WorkIcon /> },
+  { label: 'Skill', icon: <WorkIcon /> }
 ];
 
 function DrawerAppBar(props) {
@@ -48,9 +49,10 @@ function DrawerAppBar(props) {
             <ListItemButton
               component="a"
               href={
-                item.label === 'About Me' ? '#about-me' :
-                item.label === 'Work' ? '#work' :
-                item.label === 'Home' ? '#top' :
+                item.label === 'About Me' ? '/#about-me' :
+                item.label === 'Work' ? '/#work' :
+                item.label === 'Home' ? '/#top' :
+                item.label === 'Skill' ? '/skills' :
                 '#'
               }
             >
@@ -97,9 +99,10 @@ function DrawerAppBar(props) {
                 startIcon={item.icon}
                 component="a"
                 href={
-                  item.label === 'About Me' ? '#about-me' :
-                  item.label === 'Work' ? '#work' :
-                  item.label === 'Home' ? '#top' :
+                  item.label === 'About Me' ? '/#about-me' :
+                  item.label === 'Work' ? '/#work' :
+                  item.label === 'Home' ? '/#top' :
+                  item.label === 'Skill' ? '/skills' :
                   '#'
                 }
               >
