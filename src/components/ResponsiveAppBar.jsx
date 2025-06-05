@@ -19,6 +19,7 @@ import PersonIcon from '@mui/icons-material/person';
 import WorkIcon from '@mui/icons-material/Work';
 import { Avatar } from '@mui/material';
 import { Outlet } from 'react-router-dom';
+import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium"
 
 const drawerWidth = 240;
 
@@ -26,7 +27,7 @@ const navItems = [
   { label: 'Home', icon: <HomeIcon /> },
   { label: 'About Me', icon: <PersonIcon /> },
   { label: 'Work', icon: <WorkIcon /> },
-  { label: 'Skill', icon: <WorkIcon /> }
+  { label: 'Skill', icon: <WorkspacePremiumIcon /> }
 ];
 
 function DrawerAppBar(props) {

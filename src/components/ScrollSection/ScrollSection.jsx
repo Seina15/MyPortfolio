@@ -42,7 +42,7 @@ export default function ScrollSection() {
       
       {/* これまでにやってきたこと */}
       <section className="scroll-section" id="work">
-        
+    
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <TitlebarImageList />
         </div>
