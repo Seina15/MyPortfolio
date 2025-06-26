@@ -134,8 +134,9 @@ function DrawerAppBar(props) {
         component="main"
         sx={{
           flexGrow: 1,
-          width: '100vw',
-          maxWidth: '100vw',
+          width: '100%',
+          maxWidth: '1300vw',
+          mx: 'auto', 
           overflowX: 'hidden',
           p: 0,
           m: 0
