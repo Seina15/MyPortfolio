@@ -68,28 +68,23 @@ export default function TitlebarImageList() {
 
 const itemData = [
   {
-    img: './public/novice.png',
+    img: import.meta.env.BASE_URL + 'novice.png',
     title: '星間旅行',
     place: 'StarT-Tech ハッカソン',
-    rows: 2,
-    cols: 2,
-    featured: true,
   },
   {
-    img: './public/noimage.png',
+    img: import.meta.env.BASE_URL + 'noimage.png',
     title: '激動の令和',
     place: '技育Camp ハッカソン',
   },
   {
-    img: './public/babycam.png',
+    img: import.meta.env.BASE_URL + 'babycam.png',
     title: 'べビCam',
     place: 'Hack U ハッカソン',
   },
   {
-    img: './public/HSR.jpg',
+    img: import.meta.env.BASE_URL + 'HSR.jpg',
     title: 'Storing Grossly & Restaurant',
     place: 'RoboCup@Home',
   },
-  
-
 ];
