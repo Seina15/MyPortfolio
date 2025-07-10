@@ -18,16 +18,17 @@ import HomeIcon from '@mui/icons-material/Home';
 import PersonIcon from '@mui/icons-material/person';
 import WorkIcon from '@mui/icons-material/Work';
 import { Avatar } from '@mui/material';
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium"
+
 
 const drawerWidth = 240;
 
 const navItems = [
-  { label: 'Home', icon: <HomeIcon /> },
-  { label: 'About Me', icon: <PersonIcon /> },
-  { label: 'Work', icon: <WorkIcon /> },
-  { label: 'Skill', icon: <WorkspacePremiumIcon /> }
+  { label: 'Home', icon: <HomeIcon />, to: '/#top' },
+  { label: 'About Me', icon: <PersonIcon />, to: '/#about-me' },
+  { label: 'Work', icon: <WorkIcon />, to: '/#work' },
+  { label: 'Skill', icon: <WorkspacePremiumIcon />, to: '/skills' }
 ];
 
 function DrawerAppBar(props) {
@@ -48,14 +49,15 @@ function DrawerAppBar(props) {
         {navItems.map((item) => (
           <ListItem key={item.label} disablePadding>
             <ListItemButton
-              component="a"
-              href={
+              component={Link}
+              to={
                 item.label === 'About Me' ? '/#about-me' :
                 item.label === 'Work' ? '/#work' :
                 item.label === 'Home' ? '/#top' :
                 item.label === 'Skill' ? '/skills' :
                 '#'
               }
+              
             >
               {item.icon}
               <ListItemText primary={item.label} sx={{ ml: 2 }} />
@@ -85,7 +87,7 @@ function DrawerAppBar(props) {
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <Avatar
               alt="My icon"
-              src="/icon.png"
+              src={import.meta.env.BASE_URL + "icon.png"}
               sx={{ width: 32, height: 32, mr: 1 }}
             />
             <Typography variant="body1" sx={{ color: 'white', lineHeight: 1 }}>
@@ -98,8 +100,8 @@ function DrawerAppBar(props) {
                 key={item.label}
                 sx={{ color: '#fff' }}
                 startIcon={item.icon}
-                component="a"
-                href={
+                component={Link}
+                to={
                   item.label === 'About Me' ? '/#about-me' :
                   item.label === 'Work' ? '/#work' :
                   item.label === 'Home' ? '/#top' :

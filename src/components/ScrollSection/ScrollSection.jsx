@@ -23,7 +23,7 @@ export default function ScrollSection() {
         <h1 className="title" style={{ color: '#000000' }}>~ About Me ~</h1>
         
         <div className="profile">
-          <img src="/icon.png" alt="プロフィール写真" className="profile-photo" />
+          <img src={import.meta.env.BASE_URL + "icon.png"}alt="プロフィール写真" className="profile-photo" />
           <p style={{ fontSize: '1.4rem' }}>
             氏名：稲川 聖七（Seina Inagawa）<br/>
             趣味：御朱印集め、観劇、プログラミング<br/>
