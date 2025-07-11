@@ -22,6 +22,7 @@ import { Outlet, Link } from 'react-router-dom';
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium"
 
 
+// ナビゲーションバー（MUI引用）
 const drawerWidth = 240;
 
 const navItems = [
@@ -137,7 +138,7 @@ function DrawerAppBar(props) {
         sx={{
           flexGrow: 1,
           width: '100%',
-          maxWidth: '1300vw',
+          maxWidth: '100%',
           mx: 'auto', 
           overflowX: 'hidden',
           p: 0,

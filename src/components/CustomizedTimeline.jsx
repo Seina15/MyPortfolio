@@ -9,6 +9,8 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import SchoolIcon from '@mui/icons-material/School';
 import Typography from '@mui/material/Typography';
 
+
+//　略歴（未実装）
 export default function CustomizedTimeline() {
   return (
     <Timeline position="alternate"style={{background:"#243a75"}}>

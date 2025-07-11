@@ -4,7 +4,7 @@ import TitlebarImageList from '../TitlebarImageList';
 import CustomizedTimeline from "../CustomizedTimeline"
 
 
-
+// スクロールの要素
 export default function ScrollSection() {
   return (
     <>

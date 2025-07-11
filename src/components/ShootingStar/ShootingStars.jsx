@@ -6,7 +6,7 @@ export const ShootingStars = () => {
     const sky = document.getElementById('starry_sky');
     if (!sky) return;
 
-    // 流れ星を流す処理
+    // 流れ星
     const interval = setInterval(() => {
       const count = Math.floor(Math.random() * 2) + 2;
 
@@ -27,6 +27,7 @@ export const ShootingStars = () => {
 
         sky.appendChild(star);
 
+        //　調整用
         setTimeout(() => {
           sky.removeChild(star);
         }, 3000);

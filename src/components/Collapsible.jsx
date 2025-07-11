@@ -21,6 +21,7 @@ import BuildIcon from '@mui/icons-material/Build';
 
 
 // MUIテーブルから引用
+//スキル詳細
 function createData(category, name, skillLevel, experience, history) {
   return { category, name, skillLevel, experience, history };
 }

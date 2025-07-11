@@ -71,20 +71,27 @@ const itemData = [
     img: import.meta.env.BASE_URL + 'novice.png',
     title: '星間旅行',
     place: 'StarT-Tech ハッカソン',
+    category: "game",
+    explain:"星座を集めて図鑑を完成させるミニゲーム"
   },
   {
     img: import.meta.env.BASE_URL + 'noimage.png',
     title: '激動の令和',
     place: '技育Camp ハッカソン',
+    category: "game"
   },
   {
     img: import.meta.env.BASE_URL + 'babycam.png',
     title: 'べビCam',
     place: 'Hack U ハッカソン',
+    category: "application",
+    explain:"危険の'事前'検出・見守りアプリ"
   },
   {
     img: import.meta.env.BASE_URL + 'HSR.jpg',
     title: 'Storing Grossly & Restaurant',
     place: 'RoboCup@Home',
+    category: "Robot",
+    explain:"収納・配膳を行うロボットのソフトウェアを開発"
   },
 ];

@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import "./DetailProject.css"
 
+// MUI引用
 
 export function DetailProject({ open, onClose, item }) {
   if (!item) return null;
@@ -20,12 +21,17 @@ export function DetailProject({ open, onClose, item }) {
           {item.title}
         </Typography>
         <Typography id="modal-description" sx={{ mt: 2 }}>
-          開催場所: {item.place}
+          内容: {item.place}
+          <br />
+          カテゴリー: {item.category}
+          <br />
+          詳細: {item.explain}
         </Typography>
+
         <img
           src={item.img}
           alt={item.title}
-          style={{ width: '100%', marginTop: '10px', borderRadius: '8px' }}
+          style={{ width: '50%', marginTop: '10px', borderRadius: '8px' }}
         />
       </Box>
     </Modal>

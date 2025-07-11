@@ -2,6 +2,7 @@ import React from 'react'
 import './MySkill.css';
 import CollapsibleTable from "../Collapsible"
 
+// Skillぺーじ（途中）
 export const MySkill = () => {
   return (
     <>

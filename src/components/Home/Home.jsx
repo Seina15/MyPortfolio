@@ -8,7 +8,7 @@ export const Home = () => {
       <div className='first-content'>
         <h1 className="fade-in-welcome">Thank you for coming!</h1>
       </div>
-      <div style={{ minHeight: '200vh' }}>
+      <div style={{ minHeight: '100vh' }}>
         <ScrollSection />
       </div>
 
