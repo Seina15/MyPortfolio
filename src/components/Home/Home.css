@@ -45,7 +45,7 @@ h1 {
 }
 
 /* Thank you for coming */
-.first-content {
+.log {
   text-align: center;
   height: 100vh;
   padding: 100px 20px;
@@ -82,4 +82,13 @@ h1 {
 
 html {
   scroll-behavior: smooth;
+}
+
+#top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.5);
 }

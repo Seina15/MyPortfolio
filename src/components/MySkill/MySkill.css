@@ -1,5 +1,6 @@
 #myskill{
-    margin: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 
@@ -18,4 +19,13 @@
   40%,100% {
     opacity: 1;
   }
+}
+
+
+
+#skill-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }

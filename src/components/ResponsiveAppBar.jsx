@@ -20,6 +20,7 @@ import WorkIcon from '@mui/icons-material/Work';
 import { Avatar } from '@mui/material';
 import { Outlet, Link } from 'react-router-dom';
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium"
+import useScrollToHash from "./ScrollToID";
 
 
 // ナビゲーションバー（MUI引用）
@@ -29,10 +30,11 @@ const navItems = [
   { label: 'Home', icon: <HomeIcon />, to: '/#top' },
   { label: 'About Me', icon: <PersonIcon />, to: '/#about-me' },
   { label: 'Work', icon: <WorkIcon />, to: '/#work' },
-  { label: 'Skill', icon: <WorkspacePremiumIcon />, to: '/skills' }
+  { label: 'Skill', icon: <WorkspacePremiumIcon />, to: '/skills/#skill-top' }
 ];
 
 function DrawerAppBar(props) {
+  useScrollToHash();
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -55,7 +57,7 @@ function DrawerAppBar(props) {
                 item.label === 'About Me' ? '/#about-me' :
                 item.label === 'Work' ? '/#work' :
                 item.label === 'Home' ? '/#top' :
-                item.label === 'Skill' ? '/skills' :
+                item.label === 'Skill' ? '/skills/#skill-top' :
                 '#'
               }
               
@@ -106,7 +108,7 @@ function DrawerAppBar(props) {
                   item.label === 'About Me' ? '/#about-me' :
                   item.label === 'Work' ? '/#work' :
                   item.label === 'Home' ? '/#top' :
-                  item.label === 'Skill' ? '/skills' :
+                  item.label === 'Skill' ? '/skills/#skill-top' :
                   '#'
                 }
               >

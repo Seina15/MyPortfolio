@@ -4,7 +4,8 @@ import MySkill from "./components/MySkill/MySkill"
 import ResponsiveAppBar from "./components/ResponsiveAppBar"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-function App() {
+function App() {  
+
   return (
     <Router basename="/React_app">
       <Routes>

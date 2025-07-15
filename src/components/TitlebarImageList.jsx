@@ -20,7 +20,7 @@ export default function TitlebarImageList() {
             style={{ color: 'black' }}
             sx={{ fontSize: '1.5rem', backgroundColor: 'white', fontWeight: 'bold', marginTop: 10 }}
           >
-            Competition (Projects)
+            ~ Competition (Projects) ~
           </ListSubheader>
         </ImageListItem>
 
