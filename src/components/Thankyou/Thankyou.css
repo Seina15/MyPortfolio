@@ -1,0 +1,54 @@
+.thank-container {
+  position: relative;
+  max-width: 700px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.thank-text {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #2c2c5c;
+}
+
+.thank-line {
+  width: 55vw; 
+  height: 80px;
+  display: block;
+  margin-top: -50px; /* テキストに近づける */
+}
+
+
+
+.line-path {
+  fill: none;
+  stroke: #2c2c5c;
+  stroke-width: 2.5;
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  animation: drawLine 2s ease-out forwards;
+}
+
+
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.flower-image {
+  position: absolute;
+  right: -80px;
+  bottom: 90px;
+  width: 60px;
+  transform: scale(0);
+  transform-origin: center;
+  animation: flowerPop 0.6s ease-out forwards;
+  animation-delay: 1.4s;
+}
+
+@keyframes flowerPop {
+  to {
+    transform: scale(4);
+  }
+}
