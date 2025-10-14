@@ -76,7 +76,8 @@ const itemData = [
     title: '星間旅行',
     place: 'StarT-Tech ハッカソン',
     category: "game",
-    explain:"星座を集めて図鑑を完成させるミニゲーム"
+    explain:"星座を集めて図鑑を完成させるミニゲーム",
+    github:"https://github.com/Seina15/Interstellar-Travel"
   },
   {
     img: import.meta.env.BASE_URL + 'noimage.png',
@@ -89,7 +90,8 @@ const itemData = [
     title: 'べビCam',
     place: 'Hack U ハッカソン',
     category: "application",
-    explain:"危険の'事前'検出・見守りアプリ"
+    explain:"危険の'事前'検出・見守りアプリ",
+    github:"https://github.com/Seina15/BabyCamera"
   },
   {
     img: import.meta.env.BASE_URL + 'HSR.jpg',
@@ -103,6 +105,7 @@ const itemData = [
     title: 'CookList',
     place: 'InternShip',
     category: "Web Application",
-    explain:"レシピ検索・お買い物リストアプリ"
+    explain:"レシピ検索・お買い物リストアプリ",
+    github:"https://github.com/Seina15/Recipe_app"
   },
 ];
