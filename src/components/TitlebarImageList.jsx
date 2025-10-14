@@ -13,7 +13,7 @@ export default function TitlebarImageList() {
 
   return (
     <>
-      <ImageList sx={{ width: 700, height: 700, overflow: 'hidden' }}>
+  <ImageList sx={{ width: 700, height: 'auto', overflow: 'visible' }}>
         <ImageListItem key="Subheader" cols={2}>
           <ListSubheader
             component="div"
@@ -34,6 +34,10 @@ export default function TitlebarImageList() {
               style={{
                 border: '4px solid white',
                 borderRadius: '4px',
+                width: '100%',
+                height: 200,
+                objectFit: 'cover',
+                display: 'block',
               }}
             />
             <ImageListItemBar
@@ -93,5 +97,12 @@ const itemData = [
     place: 'RoboCup@Home',
     category: "Robot",
     explain:"収納・配膳を行うロボットのソフトウェアを開発"
+  },
+  {
+    img: import.meta.env.BASE_URL + 'cooklist.png',
+    title: 'CookList',
+    place: 'InternShip',
+    category: "Web Application",
+    explain:"レシピ検索・お買い物リストアプリ"
   },
 ];

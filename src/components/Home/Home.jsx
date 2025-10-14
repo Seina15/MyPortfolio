@@ -5,8 +5,8 @@ import ThankYou from '../Thankyou/Thankyou'
 
 export const Home = () => {
   return (
-     <>
-      <div id = 'top'></div>
+    <>
+    <div id = "top" style={{ backgroundColor: 'transparent' }}></div>
       <div className='log'>
         {/* <h1 className="fade-in-welcome">Thank you for coming!</h1> */}
         <ThankYou />

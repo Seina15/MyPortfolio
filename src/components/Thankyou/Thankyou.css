@@ -8,7 +8,7 @@
 .thank-text {
   font-size: 4rem;
   font-weight: bold;
-  color: #2c2c5c;
+  color: #d2d2ec;
 }
 
 .thank-line {
@@ -22,7 +22,7 @@
 
 .line-path {
   fill: none;
-  stroke: #2c2c5c;
+  stroke: #d2d2ec;
   stroke-width: 2.5;
   stroke-dasharray: 3000;
   stroke-dashoffset: 3000;
