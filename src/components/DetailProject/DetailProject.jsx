@@ -26,6 +26,12 @@ export function DetailProject({ open, onClose, item }) {
           カテゴリー: {item.category}
           <br />
           詳細: {item.explain}
+          {item.github ? (
+            <>
+              <br />
+              GitHub: <a href={item.github} target="_blank" rel="noopener noreferrer">{item.github}</a>
+            </>
+          ) : null}
         </Typography>
 
         <img

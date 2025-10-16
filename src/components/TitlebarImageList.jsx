@@ -5,6 +5,7 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import { DetailProject } from './DetailProject/DetailProject';
 
 export default function TitlebarImageList() {
@@ -44,18 +45,33 @@ export default function TitlebarImageList() {
               title={item.title}
               subtitle={item.place}
               actionIcon={
-                item.title !== '激動の令和' ? (
-                  <IconButton
-                    sx={{ color: 'rgba(227, 236, 255, 0.93)' }}
-                    aria-label={`info about ${item.title}`}
-                    onClick={() => {
-                      setSelectedItem(item);
-                      setOpen(true);
-                    }}
-                  >
-                    <InfoIcon />
-                  </IconButton>
-                ) : null
+                <div style={{ display: 'flex', alignItems: 'center' }}>
+                  {item.github ? (
+                    <IconButton
+                      component="a"
+                      href={item.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      sx={{ color: 'rgba(227, 236, 255, 0.93)' }}
+                      aria-label={`github link for ${item.title}`}
+                    >
+                      <GitHubIcon />
+                    </IconButton>
+                  ) : null}
+
+                  {item.title !== '激動の令和' ? (
+                    <IconButton
+                      sx={{ color: 'rgba(227, 236, 255, 0.93)' }}
+                      aria-label={`info about ${item.title}`}
+                      onClick={() => {
+                        setSelectedItem(item);
+                        setOpen(true);
+                      }}
+                    >
+                      <InfoIcon />
+                    </IconButton>
+                  ) : null}
+                </div>
               }
             />
           </ImageListItem>
