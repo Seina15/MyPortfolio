@@ -3,7 +3,7 @@
 これは私のポートフォリオサイトです。  
 React + Vite を使用し、モダンな構成で開発しています。
 WebサイトURL
-https://seina15.github.io/React_app/
+https://seina15.github.io/MyPortfolio/
 
 今後、順次Typescriptに以降予定です。
 ※開発中
